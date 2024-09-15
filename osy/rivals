@@ -1,0 +1,576 @@
+-- Instances
+
+local Osyrivals = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local close = Instance.new("TextButton")
+local minimize = Instance.new("TextButton")
+local ESP = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local fly = Instance.new("TextButton")
+local noclip = Instance.new("TextButton")
+local inf_jump = Instance.new("TextButton")
+local tpwalk = Instance.new("TextButton")
+
+-- Properties
+
+Osyrivals.Name = "Osyrivals"
+Osyrivals.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Osyrivals.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Osyrivals
+Frame.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 134, 0, 73)
+Frame.Size = UDim2.new(0, 628, 0, 350)
+
+close.Name = "close"
+close.Parent = Frame
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+close.BorderColor3 = Color3.new(0, 0, 0)
+close.BorderSizePixel = 0
+close.Position = UDim2.new(0, 600, 0, 0)
+close.Size = UDim2.new(0, 28, 0, 24)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(0.678431, 0, 0)
+close.TextScaled = true
+close.TextSize = 14
+close.TextStrokeColor3 = Color3.new(0.678431, 0, 0)
+close.TextWrapped = true
+
+minimize.Name = "minimize"
+minimize.Parent = Frame
+minimize.BackgroundColor3 = Color3.new(0.686275, 0.686275, 0.686275)
+minimize.BorderColor3 = Color3.new(0, 0, 0)
+minimize.BorderSizePixel = 0
+minimize.Position = UDim2.new(0, 573, 0, 0)
+minimize.Size = UDim2.new(0, 28, 0, 24)
+minimize.Font = Enum.Font.SourceSans
+minimize.Text = "-"
+minimize.TextColor3 = Color3.new(0.498039, 0.498039, 0.498039)
+minimize.TextScaled = true
+minimize.TextSize = 14
+minimize.TextStrokeColor3 = Color3.new(0.498039, 0.498039, 0.498039)
+minimize.TextWrapped = true
+
+ESP.Name = "ESP"
+ESP.Parent = Frame
+ESP.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+ESP.BorderColor3 = Color3.new(0, 0, 0)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0, 0, 0, 24)
+ESP.Size = UDim2.new(0, 126, 0, 29)
+ESP.Font = Enum.Font.SourceSans
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.new(0, 0, 0)
+ESP.TextScaled = true
+ESP.TextSize = 14
+ESP.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame
+Aimbot.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+Aimbot.BorderColor3 = Color3.new(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0, 0, 0, 53)
+Aimbot.Size = UDim2.new(0, 126, 0, 28)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.new(0, 0, 0)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14
+Aimbot.TextWrapped = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(0.364706, 0.364706, 0.364706)
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 573, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Osy - Rivals"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+fly.Name = "fly"
+fly.Parent = Frame
+fly.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+fly.BorderColor3 = Color3.new(0, 0, 0)
+fly.BorderSizePixel = 0
+fly.Position = UDim2.new(0, 126, 0, 24)
+fly.Size = UDim2.new(0, 126, 0, 28)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "Fly"
+fly.TextColor3 = Color3.new(0, 0, 0)
+fly.TextScaled = true
+fly.TextSize = 14
+fly.TextWrapped = true
+
+noclip.Name = "noclip"
+noclip.Parent = Frame
+noclip.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+noclip.BorderColor3 = Color3.new(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0, 126, 0, 52)
+noclip.Size = UDim2.new(0, 126, 0, 29)
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "Noclip"
+noclip.TextColor3 = Color3.new(0, 0, 0)
+noclip.TextScaled = true
+noclip.TextSize = 14
+noclip.TextWrapped = true
+
+inf_jump.Name = "inf_jump"
+inf_jump.Parent = Frame
+inf_jump.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+inf_jump.BorderColor3 = Color3.new(0, 0, 0)
+inf_jump.BorderSizePixel = 0
+inf_jump.Position = UDim2.new(0, 0, 0, 81)
+inf_jump.Size = UDim2.new(0, 126, 0, 29)
+inf_jump.Font = Enum.Font.SourceSans
+inf_jump.Text = "Inf Jump"
+inf_jump.TextColor3 = Color3.new(0, 0, 0)
+inf_jump.TextScaled = true
+inf_jump.TextSize = 14
+inf_jump.TextWrapped = true
+
+tpwalk.Name = "tpwalk"
+tpwalk.Parent = Frame
+tpwalk.BackgroundColor3 = Color3.new(0.54902, 0.54902, 0.54902)
+tpwalk.BorderColor3 = Color3.new(0, 0, 0)
+tpwalk.BorderSizePixel = 0
+tpwalk.Position = UDim2.new(0, 126, 0, 81)
+tpwalk.Size = UDim2.new(0, 126, 0, 29)
+tpwalk.Font = Enum.Font.SourceSans
+tpwalk.Text = "Tpwalk"
+tpwalk.TextColor3 = Color3.new(0, 0, 0)
+tpwalk.TextScaled = true
+tpwalk.TextSize = 14
+tpwalk.TextWrapped = true
+
+-- Scripts
+
+local function OQZMWNF_fake_script() -- close.Script 
+	local script = Instance.new('Script', close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(OQZMWNF_fake_script)()
+local function SWQQMOM_fake_script() -- minimize.Script 
+	local script = Instance.new('Script', minimize)
+
+	-- Function to create a new button in the ScreenGui
+	local function createButton(parentGui, positionOffset, originalButton)
+		local newButton = Instance.new("TextButton")
+		newButton.Size = UDim2.new(0, 200, 0, 50) -- Set the size of the button
+		newButton.Position = UDim2.new(0, 10, 0, positionOffset) -- Set the position of the button
+		newButton.Text = "Open Osy" -- Set the button text
+		newButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0) -- Set the button color
+		newButton.TextColor3 = Color3.fromRGB(255, 255, 255) -- Set the text color
+		newButton.Parent = parentGui -- Set the parent to the ScreenGui
+	
+		-- Function to make the frame visible again and unhide the original button
+		newButton.MouseButton1Down:Connect(function()
+			local targetFrame = parentGui:FindFirstChild("Frame") -- Replace "Frame" with the actual name of your frame
+			if targetFrame then
+				targetFrame.Visible = true
+			end
+	
+			if originalButton then
+				originalButton.Visible = true
+			end
+	
+			-- Optionally remove the button after it is clicked
+			newButton:Destroy()
+		end)
+	end
+	
+	-- Connect MouseButton1Down event to hide the frame and create a new button
+	script.Parent.MouseButton1Down:Connect(function()
+		local button = script.Parent -- The button that is clicked
+		local frame = button.Parent -- The parent Frame of the TextButton
+		local screenGui = frame.Parent -- The parent ScreenGui of the Frame
+	
+		-- Find the frame to hide
+		local targetFrame = screenGui:FindFirstChild("Frame") -- Replace "Frame" with the actual name of your frame
+	
+		if targetFrame then
+			targetFrame.Visible = false -- Make the frame invisible
+		end
+	
+		-- Calculate the next position offset for new buttons
+		local offset = 0
+		for _, child in ipairs(screenGui:GetChildren()) do
+			if child:IsA("TextButton") and child ~= button then
+				offset = offset + 60 -- Example spacing, adjust as needed
+			end
+		end
+	
+		-- Call function to create a new button
+		createButton(screenGui, offset, button) -- Pass the original button to the new button
+	
+		-- Hide the current TextButton
+		button.Visible = false
+	end)
+	
+end
+coroutine.wrap(SWQQMOM_fake_script)()
+local function DQCPHK_fake_script() -- ESP.Script 
+	local script = Instance.new('Script', ESP)
+
+	local toggleButton = script.Parent -- The button
+	local espEnabled = false
+	
+	-- Function to toggle ESP
+	local function toggleESP()
+		espEnabled = not espEnabled
+	
+		if espEnabled then
+			-- Enable ESP
+			for _, player in pairs(game.Players:GetPlayers()) do
+				if player ~= game.Players.LocalPlayer and player.Character then
+					local character = player.Character
+					if character:FindFirstChild("HumanoidRootPart") then
+						local espBox = Instance.new("BoxHandleAdornment")
+						espBox.Name = "ESP"
+						espBox.Adornee = character.HumanoidRootPart
+						espBox.Size = Vector3.new(4, 6, 2) -- Adjust to fit the player size
+						espBox.Color3 = Color3.new(1, 0, 0) -- Red color for the ESP box
+						espBox.AlwaysOnTop = true
+						espBox.ZIndex = 10
+						espBox.Transparency = 0.7
+						espBox.Parent = character.HumanoidRootPart
+					end
+				end
+			end
+		else
+			-- Disable ESP
+			for _, player in pairs(game.Players:GetPlayers()) do
+				if player ~= game.Players.LocalPlayer and player.Character then
+					if player.Character:FindFirstChild("HumanoidRootPart") then
+						local espBox = player.Character.HumanoidRootPart:FindFirstChild("ESP")
+						if espBox then
+							espBox:Destroy()
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	-- Connect the button click to toggle ESP
+	toggleButton.MouseButton1Click:Connect(toggleESP)
+	
+end
+coroutine.wrap(DQCPHK_fake_script)()
+local function REXI_fake_script() -- Aimbot.Script 
+	local script = Instance.new('Script', Aimbot)
+
+	local toggleButton = script.Parent -- The button
+	local camera = game.Workspace.CurrentCamera -- The player's camera
+	local localPlayer = game.Players.LocalPlayer -- The local player
+	local runService = game:GetService("RunService") -- To update every frame
+	local isAimbotEnabled = false
+	local aimbotTarget = nil
+	
+	-- Function to get the nearest player to the local player
+	local function getNearestPlayer()
+		local nearestPlayer = nil
+		local shortestDistance = math.huge
+	
+		for _, player in pairs(game.Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local distance = (localPlayer.Character.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
+				if distance < shortestDistance then
+					shortestDistance = distance
+					nearestPlayer = player
+				end
+			end
+		end
+	
+		return nearestPlayer
+	end
+	
+	-- Function to enable or disable the aimbot
+	local function toggleAimbot()
+		isAimbotEnabled = not isAimbotEnabled
+	
+		if isAimbotEnabled then
+			-- Enable the aimbot and continuously track the nearest player
+			runService:BindToRenderStep("AimbotTracker", Enum.RenderPriority.Camera.Value, function()
+				local nearestPlayer = getNearestPlayer()
+				if nearestPlayer and nearestPlayer.Character and nearestPlayer.Character:FindFirstChild("HumanoidRootPart") then
+					aimbotTarget = nearestPlayer.Character.HumanoidRootPart
+					camera.CFrame = CFrame.new(camera.CFrame.Position, aimbotTarget.Position) -- Make the camera look at the target
+				else
+					aimbotTarget = nil
+				end
+			end)
+		else
+			-- Disable the aimbot and reset camera control
+			runService:UnbindFromRenderStep("AimbotTracker")
+		end
+	end
+	
+	-- Connect the button click to toggle the aimbot
+	toggleButton.MouseButton1Click:Connect(toggleAimbot)
+	
+end
+coroutine.wrap(REXI_fake_script)()
+local function YSSQJNS_fake_script() -- fly.Script 
+	local script = Instance.new('Script', fly)
+
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local rootPart = character:WaitForChild("HumanoidRootPart")
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local camera = workspace.CurrentCamera
+	
+	local button = script.Parent -- Reference to your existing button
+	local flying = false
+	local speed = 100 -- Default flying speed
+	local maxSpeed = 200 -- Maximum speed
+	local flyDirection = Vector3.new(0, 0, 0)
+	
+	-- Variables for flying
+	local bodyGyro
+	local bodyVelocity
+	
+	-- Fly function
+	local function startFlying()
+		flying = true
+		humanoid.PlatformStand = true -- Prevents default gravity and walking
+	
+		-- Set up BodyGyro for rotation stabilization
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.CFrame = rootPart.CFrame
+		bodyGyro.MaxTorque = Vector3.new(400000, 400000, 400000) -- Torque for stabilization
+		bodyGyro.P = 3000
+		bodyGyro.Parent = rootPart
+	
+		-- Set up BodyVelocity for smooth movement
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+		bodyVelocity.MaxForce = Vector3.new(100000, 100000, 100000) -- Adjust for control
+		bodyVelocity.Parent = rootPart
+	end
+	
+	local function stopFlying()
+		flying = false
+		humanoid.PlatformStand = false -- Return normal movement
+	
+		-- Clean up BodyGyro and BodyVelocity
+		if bodyGyro then bodyGyro:Destroy() end
+		if bodyVelocity then bodyVelocity:Destroy() end
+		flyDirection = Vector3.new(0, 0, 0) -- Reset fly direction
+	end
+	
+	local function toggleFly()
+		if flying then
+			stopFlying()
+		else
+			startFlying()
+		end
+	end
+	
+	-- Movement control based on keys
+	UIS.InputBegan:Connect(function(input)
+		if flying then
+			if input.KeyCode == Enum.KeyCode.W then
+				flyDirection = flyDirection + Vector3.new(0, 0, 1) -- Move forward (positive Z direction)
+			elseif input.KeyCode == Enum.KeyCode.S then
+				flyDirection = flyDirection + Vector3.new(0, 0, -1) -- Move backward (negative Z direction)
+			elseif input.KeyCode == Enum.KeyCode.A then
+				flyDirection = flyDirection + Vector3.new(-1, 0, 0) -- Move left
+			elseif input.KeyCode == Enum.KeyCode.D then
+				flyDirection = flyDirection + Vector3.new(1, 0, 0) -- Move right
+			elseif input.KeyCode == Enum.KeyCode.Space then
+				flyDirection = flyDirection + Vector3.new(0, 1, 0) -- Ascend
+			elseif input.KeyCode == Enum.KeyCode.LeftControl then
+				flyDirection = flyDirection + Vector3.new(0, -1, 0) -- Descend
+			end
+		end
+	end)
+	
+	-- Stop moving in direction when key is released
+	UIS.InputEnded:Connect(function(input)
+		if flying then
+			if input.KeyCode == Enum.KeyCode.W then
+				flyDirection = flyDirection - Vector3.new(0, 0, 1) -- Stop moving forward
+			elseif input.KeyCode == Enum.KeyCode.S then
+				flyDirection = flyDirection - Vector3.new(0, 0, -1) -- Stop moving backward
+			elseif input.KeyCode == Enum.KeyCode.A then
+				flyDirection = flyDirection - Vector3.new(-1, 0, 0) -- Stop moving left
+			elseif input.KeyCode == Enum.KeyCode.D then
+				flyDirection = flyDirection - Vector3.new(1, 0, 0) -- Stop moving right
+			elseif input.KeyCode == Enum.KeyCode.Space then
+				flyDirection = flyDirection - Vector3.new(0, 1, 0) -- Stop ascending
+			elseif input.KeyCode == Enum.KeyCode.LeftControl then
+				flyDirection = flyDirection - Vector3.new(0, -1, 0) -- Stop descending
+			end
+		end
+	end)
+	
+	-- Smoothly update the fly movement on every frame
+	RunService.RenderStepped:Connect(function()
+		if flying then
+			local cameraDirection = camera.CFrame.LookVector -- Get camera's forward direction
+			local moveDirection = (camera.CFrame.LookVector * flyDirection.Z + camera.CFrame.RightVector * flyDirection.X) + Vector3.new(0, flyDirection.Y, 0)
+			bodyVelocity.Velocity = moveDirection * speed -- Apply velocity based on direction
+			bodyGyro.CFrame = camera.CFrame -- Adjust orientation to match the camera's
+		end
+	end)
+	
+	-- Increase/decrease fly speed with mouse wheel (optional)
+	UIS.InputChanged:Connect(function(input)
+		if flying and input.UserInputType == Enum.UserInputType.MouseWheel then
+			speed = math.clamp(speed + input.Position.Z * 10, 50, maxSpeed) -- Adjust speed with the mouse wheel
+		end
+	end)
+	
+	-- Connect the button to toggle flying
+	button.MouseButton1Click:Connect(function()
+		toggleFly()
+	end)
+	
+end
+coroutine.wrap(YSSQJNS_fake_script)()
+local function JJBA_fake_script() -- noclip.Script 
+	local script = Instance.new('Script', noclip)
+
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local button = script.Parent -- Reference to your existing button
+	local noclip = false
+	
+	-- Function to toggle noclip
+	local function toggleNoclip()
+		noclip = not noclip
+		if noclip then
+			-- Disable collisions on all parts of the player's character
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") and part.CanCollide then
+					part.CanCollide = false
+				end
+			end
+		else
+			-- Re-enable collisions on all parts of the player's character
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = true -- Reset the collision state to default
+				end
+			end
+		end
+	end
+	
+	-- Continuously update collision properties while noclip is enabled
+	RunService.Stepped:Connect(function()
+		if noclip then
+			for _, part in pairs(character:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false -- Ensure no collisions happen while noclip is on
+				end
+			end
+		end
+	end)
+	
+	-- Toggle noclip when the button is clicked
+	button.MouseButton1Click:Connect(function()
+		toggleNoclip()
+	end)
+	
+end
+coroutine.wrap(JJBA_fake_script)()
+local function VFRI_fake_script() -- inf_jump.Script 
+	local script = Instance.new('Script', inf_jump)
+
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	-- Infinite jump toggle
+	local isInfiniteJumpEnabled = false
+	local canJump = true
+	
+	-- Function to handle infinite jump
+	local function onJumpRequest()
+		if isInfiniteJumpEnabled then
+			if canJump then
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				canJump = false
+			end
+		end
+	end
+	
+	-- Function to toggle infinite jump
+	local function toggleInfiniteJump()
+		isInfiniteJumpEnabled = not isInfiniteJumpEnabled
+		if isInfiniteJumpEnabled then
+			script.Parent.Text = "Inf Jump: ON"
+		else
+			script.Parent.Text = "Inf Jump: OFF"
+		end
+	end
+	
+	-- Connect the button to toggle infinite jump
+	script.Parent.MouseButton1Click:Connect(toggleInfiniteJump)
+	
+	-- Connect the jump event
+	game:GetService("UserInputService").JumpRequest:Connect(onJumpRequest)
+	
+	-- Reset the jump state when landed
+	humanoid.StateChanged:Connect(function(_, newState)
+		if newState == Enum.HumanoidStateType.Seated or newState == Enum.HumanoidStateType.Freefall then
+			canJump = true
+		end
+	end)
+	
+end
+coroutine.wrap(VFRI_fake_script)()
+local function TDWLE_fake_script() -- tpwalk.Script 
+	local script = Instance.new('Script', tpwalk)
+
+	-- Configuration
+	local speedMultiplier = 3.5 -- Change this value to adjust speed
+	local button = script.Parent
+	local tpwalking = false -- Start with teleport-walking disabled
+	
+	-- Function to handle teleport-walking
+	local function toggleTpWalking()
+		tpwalking = not tpwalking
+		if tpwalking then
+			button.Text = "TP Walk: ON"
+		else
+			button.Text = "TP Walk: OFF"
+		end
+	
+		local player = game.Players.LocalPlayer
+		local chr = player.Character
+		local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+		local hb = game:GetService("RunService").Heartbeat
+	
+		while tpwalking and chr and hum and hum.Parent do
+			local delta = hb:Wait()
+			if hum.MoveDirection.Magnitude > 0 then
+				local moveDirection = hum.MoveDirection.Unit
+				local distance = moveDirection * delta * 10 * speedMultiplier
+				chr:TranslateBy(distance)
+			end
+		end
+	end
+	
+	-- Connect button click to the toggle function
+	button.MouseButton1Click:Connect(toggleTpWalking)
+	
+end
+coroutine.wrap(TDWLE_fake_script)()
