@@ -1,3 +1,5 @@
-
-https://github.com/user-attachments/assets/34699e34-50c4-4aef-894d-d8ea0170fd0e
 ### Welcome to Meme factory idfk
+
+
+https://github.com/user-attachments/assets/308d6d30-2e85-4ff3-9bbd-35a7d51af015
+
